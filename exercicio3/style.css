@@ -2,18 +2,28 @@
   margin: 0;
   padding: 0;
 }
-
+body {
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  cursor: zoom-in;
+}
 main{
   display: flex;
   gap: 20px;
   padding: 20px;
-  width: 800px;
+  width: 1700px;
+  height: 216px;
   margin: 0 auto;
   background-color: orange;
+  align-items: center;
 }
 
 section{
-  height: 100px;
+  height: 182px;
+  width: 200px;
   background-color: steelblue;
   color: white;
   display: flex;
@@ -23,16 +33,24 @@ section{
 }
 
 #section-1{
+  order: 1;
 }
 
 #section-2{
+  order: 2;
+  flex-grow: calc(2/5);
 }
 
 #section-3{
+  order: 3;
+  flex-grow: calc(3/5);
 }
 
 #section-4{
+  order: 4;
+  flex-basis: 200px;
 }
 
 #section-5{
+  order: 0;
 }
